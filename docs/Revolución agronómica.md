@@ -1,0 +1,6 @@
+---
+tags:
+  - paleontología
+---
+"Con la irrupción de los organismos bioturbadores de sedimento a principios del Cámbrico los tapices bacterianos ya no pudieron formarse, al menos en aguas someras. Entonces, los fondos marinos fueron colonizados por comunidades mucho más complejas que generaron trazas tridimensionales que removieron y oxigenaron el sustrato. Este cambio en la icnología de los fondos marinos se conoce como la revolución agronómica (Seilacher, 1999)."
+"También se diversificaron rápidamente los organismos de hábitos infaunales, tanto móviles como sésiles, lo que marca la transición de sustratos cubiertos de tapices microbianos (matgrounds) a sustratos bioturbados por la acción de los cavadores, fenómeno que se identifica como la ‘revolución agronómica’ (ver § 3.12). En la base del Cámbrico hacen su aparición icnogéneros como Rhizocorallium y Chondrites que van a perdurar durante todo el Fanerozoico. Del punto de vista de los hábitos alimentarios, ya había filtradores, detritívoros, carnívoros, raspadores y carroñeros. Sin dudas, en el Cámbrico la ocupación del ecoespacio o espacio adaptativo fue mucho mayor que en épocas previas (Zhuravlev y Riding, 2001)."

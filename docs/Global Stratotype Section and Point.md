@@ -1,0 +1,5 @@
+---
+tags:
+---
+GSSP
+"Después de largas discusiones, se acordó definir cada unidad cronoestratigráfica a partir de un horizonte que representa su límite con la unidad infrayacente, el estratotipo de límite. En esas capas debe ser posible comprobar con claridad la primera aparición del fósil guía que ha sido elegido para definir el límite en cuestión. Si bien la mayoría de los límites se basan en criterios paleontológicos, otras veces se recurre a un cambio de polaridad magnética o algún otro evento que se considere adecuado (Fig. 1.49). El límite así establecido se extiende luego a todo el mundo (correlatividad global), definiéndose una superficie idealmente isócrona. Modernamente, se ha adoptado el término de Global Stratotype Section and Point o GSSP, que en castellano puede traducirse como Estratotipo de Límite Global. El término point se refiere al punto exacto de la sección tipo donde se ubica el límite, el que queda demarcado por medio de la llamada ‘estaca dorada’ (golden spike), que no es necesariamente una estaca y mucho menos debe ser dorada."
