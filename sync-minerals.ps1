@@ -31,3 +31,4 @@ git add .
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 git commit -m "Vault update: $timestamp"
 git push origin main
+python -m mkdocs gh-deploy --force

@@ -1,4 +1,7 @@
+
 site_name: Mineralogy Wiki
+site_url: https://lucianoab10-web.github.io/mineralogy-wiki/
+docs_dir: docs
 theme:
   name: material
 
