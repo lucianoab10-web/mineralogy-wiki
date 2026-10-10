@@ -13,12 +13,12 @@ Ver [[egirina]], [[Augita]], [[hedenbergita]] y [[diopsida]].
 
 | Color | Raya | Brillo | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad | Hábito, morfología o forma cristalina. | Fractura | Sistema cristalino | Obs.                                 |
 | ----- | ---- | ------ | --------------------- | -------------------------------- | --------- | --------------- | ---------- | -------------------------------------- | -------- | ------------------ | ------------------------------------ |
-|       |      |        |                       |                                  |           |                 |            |                                        |          |                    | ![Pasted image 20260927153831.png](Pasted image 20260927153831.png) |
+|       |      |        |                       |                                  |           |                 |            |                                        |          |                    | ![Pasted image 20260927153831.png](imagenes/Pasted image 20260927153831.png) |
 
 
-![Pasted image 20260927153746.png|517](Pasted image 20260927153746.png|517)
+![Pasted image 20260927153746.png|517](imagenes/Pasted image 20260927153746.png|517)
 
-![Pasted image 20260927153753.png](Pasted image 20260927153753.png)
+![Pasted image 20260927153753.png](imagenes/Pasted image 20260927153753.png)
 
 
-![Pasted image 20260927154116.png](Pasted image 20260927154116.png)
+![Pasted image 20260927154116.png](imagenes/Pasted image 20260927154116.png)

@@ -19,4 +19,4 @@ tags:
 
 | imagenes                             |     |
 | ------------------------------------ | --- |
-| ![Pasted image 20260927154819.png](Pasted image 20260927154819.png) |     |
+| ![Pasted image 20260927154819.png](imagenes/Pasted image 20260927154819.png) |     |

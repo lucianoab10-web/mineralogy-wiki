@@ -13,4 +13,4 @@ Ambiente: La hornblenda es un mineral formador de rocas de algunas rocas plutón
 | ------------------- | -------- | ----------------------------------------------------------------------------------------- | -------------------------------- | ---------- | --------- | ----- | --------------- | ----------------------------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------ |
 | Verde, cafe, negrro | Incolora | submetalico, vitreo, perlado, sedoso<br>Perfecto, en dos direcciones en forma de diamante | 5-6                              |            | Fragil    |       | 3.0-3.4         | Transparente a translucido en bordes astillados |      | cristales prismáticos que tienen una sección transversal en forma de diamante, tambien granular, columnar, fibroso, radiado | fractura desigual, astillada | Monoclinico        |
 
-![Pasted image 20260923185025.png](Pasted image 20260923185025.png)
+![Pasted image 20260923185025.png](imagenes/Pasted image 20260923185025.png)

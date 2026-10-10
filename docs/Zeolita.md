@@ -31,5 +31,5 @@ tags:
 
 | imagen                               | nota                                                                                                                                                                |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Pasted image 20260927172044.jpg](Pasted image 20260927172044.jpg) | [Tschernichite](https://www.mindat.org/min-4037.html)<br><br>[Neer Road, Goble, Columbia County, Oregon, USA](https://www.mindat.org/loc-19733.html)                |
-| ![Pasted image 20260927172122.jpg](Pasted image 20260927172122.jpg) | [Millington Quarry, Bernards Township, Somerset County, New Jersey, USA](https://www.mindat.org/loc-3952.html)[Natrolite](https://www.mindat.org/min-2947.html)<br> |
+| ![Pasted image 20260927172044.jpg](imagenes/Pasted image 20260927172044.jpg) | [Tschernichite](https://www.mindat.org/min-4037.html)<br><br>[Neer Road, Goble, Columbia County, Oregon, USA](https://www.mindat.org/loc-19733.html)                |
+| ![Pasted image 20260927172122.jpg](imagenes/Pasted image 20260927172122.jpg) | [Millington Quarry, Bernards Township, Somerset County, New Jersey, USA](https://www.mindat.org/loc-3952.html)[Natrolite](https://www.mindat.org/min-2947.html)<br> |

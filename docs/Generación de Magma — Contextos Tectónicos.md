@@ -3,7 +3,7 @@ tags:
 aliases:
 ---
 [[3f94d66dc80dc6db7927944efd4508e1_MD5.jpg|Open: Captura de pantalla 2026-09-13 133709.png]]
-![3f94d66dc80dc6db7927944efd4508e1_MD5.jpg](3f94d66dc80dc6db7927944efd4508e1_MD5.jpg)
+![3f94d66dc80dc6db7927944efd4508e1_MD5.jpg](imagenes/3f94d66dc80dc6db7927944efd4508e1_MD5.jpg)
 # Generación de magma — contextos tectónicos
 
 > Basado en la **Figura 1.15** del texto de petrología ígnea: *Generalized cross section illustrating magma generation associated with various plate tectonic settings.*

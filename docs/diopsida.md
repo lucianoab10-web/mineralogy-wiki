@@ -17,5 +17,5 @@ tags:
 
 | imagen                               | nota                                                                                                                     |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| ![Pasted image 20260927162414.png](Pasted image 20260927162414.png) | [La Juanona Quarry, Antequera, Málaga, Andalusia, Spain](https://www.mindat.org/loc-52466.html)                          |
-| ![Pasted image 20260927162432.jpg](Pasted image 20260927162432.jpg) | [Merelani Hills, Lelatema Mountains, Simanjiro District, Manyara Region, Tanzania](https://www.mindat.org/loc-5699.html) |
+| ![Pasted image 20260927162414.png](imagenes/Pasted image 20260927162414.png) | [La Juanona Quarry, Antequera, Málaga, Andalusia, Spain](https://www.mindat.org/loc-52466.html)                          |
+| ![Pasted image 20260927162432.jpg](imagenes/Pasted image 20260927162432.jpg) | [Merelani Hills, Lelatema Mountains, Simanjiro District, Manyara Region, Tanzania](https://www.mindat.org/loc-5699.html) |

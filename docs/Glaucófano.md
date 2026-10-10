@@ -16,6 +16,6 @@ tags:
 
 | imagen                               | nota                                                                                                           |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| ![Pasted image 20260927163624.jpg](Pasted image 20260927163624.jpg) | [Rio Oremo, Chiavolino, Pollone, Biella Province, Piedmont, Italy](https://www.mindat.org/loc-73121.html)      |
-| ![Pasted image 20260927163639.jpg](Pasted image 20260927163639.jpg) | [Ward Creek [1], Cazadero, Coast Range, Sonoma County, California, USA](https://www.mindat.org/loc-30995.html) |
+| ![Pasted image 20260927163624.jpg](imagenes/Pasted image 20260927163624.jpg) | [Rio Oremo, Chiavolino, Pollone, Biella Province, Piedmont, Italy](https://www.mindat.org/loc-73121.html)      |
+| ![Pasted image 20260927163639.jpg](imagenes/Pasted image 20260927163639.jpg) | [Ward Creek [1], Cazadero, Coast Range, Sonoma County, California, USA](https://www.mindat.org/loc-30995.html) |
 

@@ -17,5 +17,5 @@ tags:
 
 | imagen                               | nota                                                                                                                        |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| ![Pasted image 20260927164139.jpg](Pasted image 20260927164139.jpg) | [Rosina vein, San Piero in Campo, Campo nell'Elba, Livorno Province, Tuscany, Italy](https://www.mindat.org/loc-56135.html) |
-| ![Pasted image 20260927164152.jpg](Pasted image 20260927164152.jpg) | [Chilas, Diamer District, Gilgit-Baltistan, Pakistan](https://www.mindat.org/loc-11487.html)                                |
+| ![Pasted image 20260927164139.jpg](imagenes/Pasted image 20260927164139.jpg) | [Rosina vein, San Piero in Campo, Campo nell'Elba, Livorno Province, Tuscany, Italy](https://www.mindat.org/loc-56135.html) |
+| ![Pasted image 20260927164152.jpg](imagenes/Pasted image 20260927164152.jpg) | [Chilas, Diamer District, Gilgit-Baltistan, Pakistan](https://www.mindat.org/loc-11487.html)                                |

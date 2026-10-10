@@ -1,1 +1,1 @@
-![IMG_0316.jpeg](IMG_0316.jpeg)
+![IMG_0316.jpeg](imagenes/IMG_0316.jpeg)

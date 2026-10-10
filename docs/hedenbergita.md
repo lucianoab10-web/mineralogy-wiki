@@ -17,5 +17,5 @@ tags:
 
 | imagen                               | nota                                                                                                                                             |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![Pasted image 20260927161321.png](Pasted image 20260927161321.png) | [Southern operations Mine, Broken Hill, Broken Hill district, Yancowinna Co., New South Wales, Australia](https://www.mindat.org/loc-10307.html) |
-| ![Pasted image 20260927161334.png](Pasted image 20260927161334.png) | <br>Malmberget, Gällivare, Norrbotten County, Sweden                                                                                             |
+| ![Pasted image 20260927161321.png](imagenes/Pasted image 20260927161321.png) | [Southern operations Mine, Broken Hill, Broken Hill district, Yancowinna Co., New South Wales, Australia](https://www.mindat.org/loc-10307.html) |
+| ![Pasted image 20260927161334.png](imagenes/Pasted image 20260927161334.png) | <br>Malmberget, Gällivare, Norrbotten County, Sweden                                                                                             |

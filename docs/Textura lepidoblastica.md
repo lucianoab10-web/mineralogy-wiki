@@ -10,5 +10,5 @@ Una textura lepidoblástica es una textura metamórfica en la que los minerales 
 
 A lepidoblastic texture is a metamorphic texture in which platy or tabular minerals are aligned to produce a planar fabric. Slate, phyllite and schist all have lepidoblastic textures. This texture is due to the parallel orientation during recrystallization of minerals with a flaky or scaly habit, e.g. mica and chlorite.
 
-![Pasted image 20260928211635.png](Pasted image 20260928211635.png)
+![Pasted image 20260928211635.png](imagenes/Pasted image 20260928211635.png)
 Blandly creanulated lepidoblastic muscovite layers. XPL image, 2x (Field of view = 7mm)
