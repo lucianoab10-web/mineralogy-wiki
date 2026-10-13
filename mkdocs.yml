@@ -17,3 +17,10 @@ markdown_extensions:
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+hooks:
+  - hooks/obsidian_images.py
+
+extra:
+  image_dirs:
+    - 'C:/Users/Luciano/iCloudDrive/iCloud~md~obsidian/my-notes/compartidos/second-brain/imagenes'

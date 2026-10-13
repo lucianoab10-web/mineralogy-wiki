@@ -3,7 +3,7 @@ $ObsidianMineralsPath = "C:\Users\Luciano\iCloudDrive\iCloud~md~obsidian\my-note
 $ObsidianImagesPath   = "C:\Users\Luciano\iCloudDrive\iCloud~md~obsidian\my-notes\compartidos\second-brain\imagenes\"
 
 # MkDocs repository paths
-$MkDocsRepoPath = "C:\Users\Luciano\mineralogy-wiki"
+$MkDocsRepoPath = "C:\Users\Luciano\mineralogy-wiki\hooks"
 $MkDocsDocsPath = Join-Path $MkDocsRepoPath "docs"
 $MkDocsImagesPath = Join-Path $MkDocsDocsPath "imagenes"
 
