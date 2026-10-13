@@ -1,0 +1,18 @@
+formulas:
+  Resuelto: if(file.hasTag("resuelto"), "✅", "")
+  metaforficos: if(file.hasTag("metamorficos-lista"), "✅", "")
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder(this.file.folder)
+    order:
+      - file.name
+      - formula.Resuelto
+      - formula.metaforficos
+    sort:
+      - property: formula.metaforficos
+        direction: DESC
+      - property: formula.Resuelto
+        direction: DESC
