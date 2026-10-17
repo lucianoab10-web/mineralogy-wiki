@@ -16,4 +16,4 @@ Ambiente: La estaurolita se encuentra con albita, biotita y sillimanita en gneis
 | --------------------------------------------------------- | ----------------- | -------------------- | --------------------------------------------- | -------------------------------- | --------- | --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------- | ---- |
 | Marron rojizo oscuro a marron negroso, marron amarillento | Blanco a grisaceo | Subvitreo a resinoso | Pobre, en una dirección de sentido a lo largo | 7-7.5                            | Fragil    | 3.74-3.83       | Transparente a opaca | solo o maclado.<br>Los cristales maclados muestran dos cristales individuales entrelazados a casi 60° o casi 90°. | sub-concoidal | pseudo-ortorombico. Monoclinico |      |
 
-![Pasted image 20260927152850.png](imagenes/Pasted image 20260927152850.png)
+![Pasted image 20260927152850.png](imagenes/Pasted%20image%2020260927152850.png)

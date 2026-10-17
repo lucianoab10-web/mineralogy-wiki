@@ -3,15 +3,19 @@ tags:
   - minerales
 ---
 
-| Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente |
-| ---- | ----------------------- | ------- | ------------------ | -------- |
-|      |                         | $$  $$  |                    |          |
 
-| Color | Raya | Brillo | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad | Hábito, morfología o forma cristalina. | Fractura | Sistema cristalino | Obs. |
-| ----- | ---- | ------ | --------------------- | -------------------------------- | --------- | --------------- | ---------- | -------------------------------------- | -------- | ------------------ | ---- |
-|       |      |        |                       |                                  |           |                 |            |                                        |          |                    |      |
+| Tipo | Formula | Mejores marcas de campo | Especies similares | Ambiente | Depósitos | Asociación | Observaciones |
+| ---- | ------- | ----------------------- | ------------------ | -------- | --------- | ---------- | ------------- |
+|      | $$  $$  |                         |                    |          |           |            |               |
+
+| Fuente                                                                 | Color    | Brillo | Raya | Dureza relativa (escala de Mohs) | Clivaje (exfoliación) | Peso específico | Fractura | Diafanidad | Tenacidad | Sistema cristalino | Hábito, morfología o forma cristalina. | otros |
+| ---------------------------------------------------------------------- | -------- | ------ | ---- | -------------------------------- | --------------------- | --------------- | -------- | ---------- | --------- | ------------------ | -------------------------------------- | ----- |
+| The Audubon Society field guide to North American rocks and minerals   | <br><br> |        |      |                                  |                       |                 |          |            |           |                    |                                        |       |
+| [Handbook of Mineralogy](https://handbookofmineralogy.org/pdf-search/) |          |        |      |                                  |                       |                 |          |            |           |                    |                                        |       |
+| [mindat](https://www.mindat.org/)                                      |          |        |      |                                  |                       |                 |          |            |           |                    |                                        |       |
 
 
-| imagen | nota |
-| ------ | ---- |
-|        |      |
+| imagen   | nota |
+| -------- | ---- |
+| <br><br> |      |
+

@@ -22,4 +22,4 @@ Especies similares: La clinozoisita suele ser de color marrón; la turmalina car
 | Verde amarillento, verde, verde cafe, negro | Incolora | Vitreo<br><br>Perfecto         | 6                                | Fragil    |       | 3.338-3.49      | Transparente, translucido, opaco |      | Prismático, elongado y estriado. Gibrosos, granular fino a grueso, masivo | Irregular, dispar | Monoclinico        | Contact, lamellar, común. |
 
 ### Imagenes
-![Pasted image 20260923180417.png](imagenes/Pasted image 20260923180417.png)
+![Pasted image 20260923180417.png](imagenes/Pasted%20image%2020260923180417.png)

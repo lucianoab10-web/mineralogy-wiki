@@ -19,4 +19,4 @@ tags:
 
 | imagen                               | nota |
 | ------------------------------------ | ---- |
-| ![Pasted image 20260927155030.png](imagenes/Pasted image 20260927155030.png) |      |
+| ![Pasted image 20260927155030.png](imagenes/Pasted%20image%2020260927155030.png) |      |

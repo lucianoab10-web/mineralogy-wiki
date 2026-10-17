@@ -1,1 +1,1 @@
-![Pasted image 20260901010228.png](imagenes/Pasted image 20260901010228.png)
+![Pasted image 20260901010228.png](imagenes/Pasted%20image%2020260901010228.png)
