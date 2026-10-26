@@ -5,21 +5,16 @@ tags:
   - metamorficos-lista
 ---
 
-$$
-\require{mhchem}
-\ce{Ca2Al2(Fe^{3+}, Al)(SiO4)(Si2O7)O(OH)}
-$$
+| Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente |
+| ---- | ----------------------- | ------- | ------------------ | -------- |
+| Sorosilicato (Grupo de la epidota) | Color verde pistacho o negro verdoso oscuro y cristales esbeltos estriados. | $$ Ca_{2}Al_{2}(Fe^{3+},Al)(SiO_{4})(Si_{2}O_{7})O(OH) $$ | La clinozoisita suele ser marrón; la turmalina carece de exfoliación; la actinolita presenta exfoliación perfecta en dos direcciones. | Característico de varias facies metamórficas regionales y rocas ígneas félsicas contaminadas; skarns (contacto); alteración de plagioclasa (saussurización). |
 
-Polimorfismo y serie: Forma una serie con la clinozoisita. 
-Grupo mineral: Grupo de la epidota.
-Yacimientos: Característico de varias facies de rocas metamorfizadas regionalmente y de algunas rocas ígneas felsicas contaminadas; en zonas de contacto entre rocas ígneas y sedimentarias calcáreas; procedente de la alteración del plagioclasa (saussurización). 
-Asociación: Zeolitas, anfíboles, feldespatos plagioclasos, cuarzo, actinolita, calcita (facies de esquisto verde); anfiboles, vesuvianita, escapolita, talco, wollastonita, piroxenos, granate (facies de hornfels de epidota); pumpellyita, glaucofano, lawsonita, riebeckita, granate, omfacita (facies de esquisto azul).
-Principales características de identificación: Color pistacho o negro verdoso oscuro y cristales esbeltos y estriados. 
-Especies similares: La clinozoisita suele ser de color marrón; la turmalina carece de exfoliación; y la actinolita presenta una exfoliación perfecta en dos direcciones.
+| Color | Raya | Brillo | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad | Hábito, morfología o forma cristalina. | Fractura | Sistema cristalino | Obs. |
+| ----- | ---- | ------ | --------------------- | -------------------------------- | --------- | --------------- | ---------- | -------------------------------------- | -------- | ------------------ | ---- |
+| Verde amarillento, verde, verde café, negro | Incolora | Vítreo | Perfecto en una dirección | 6 | Frágil | 3.338 - 3.49 | Transparente, traslúcido a opaco | Prismático, elongado y estriado. Fibroso, granular fino a grueso, masivo. | Irregular, dispar | Monoclínico | Maclado de contacto o lamelar común. Forma una serie con la clinozoisita. |
 
-| Color                                       | Raya     | Brillo y Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Tacto | Peso específico | Diafanidad                       | Olor | Hábito, morfología o forma cristalina.                                    | Fractura          | Sistema cristalino | Maclado                   |
-| ------------------------------------------- | -------- | ------------------------------ | -------------------------------- | --------- | ----- | --------------- | -------------------------------- | ---- | ------------------------------------------------------------------------- | ----------------- | ------------------ | ------------------------- |
-| Verde amarillento, verde, verde cafe, negro | Incolora | Vitreo<br><br>Perfecto         | 6                                | Fragil    |       | 3.338-3.49      | Transparente, translucido, opaco |      | Prismático, elongado y estriado. Gibrosos, granular fino a grueso, masivo | Irregular, dispar | Monoclinico        | Contact, lamellar, común. |
 
-### Imagenes
-![Pasted image 20260923180417.png](imagenes/Pasted%20image%2020260923180417.png)
+| imagen | nota |
+| ------ | ---- |
+| ![Pasted image 20261026180140.jpg](imagenes/Pasted%20image%2020261026180140.jpg) | Epidote. Fanadinho, Capelinha, Minas Gerais, Brazil. [Mindat](https://www.mindat.org/photo-165006.html) |
+| ![Pasted image 20261026180158.jpg](imagenes/Pasted%20image%2020261026180158.jpg) | Epidote. Capelinha, Minas Gerais, Brazil. [Mindat](https://www.mindat.org/photo-264972.html) |

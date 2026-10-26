@@ -14,3 +14,22 @@ Asociación: Cuarzo, plagioclasa, feldespato potásico, biotita, turmalina, topa
 | Color                                                                    | Raya     | Brillo y Clivaje (exfoliación)                    | Dureza relativa (escala de Mohs) | Magnetismo | Tenacidad | Tacto | Peso específico | Diafanidad                 | Olor | Hábito, morfología o forma cristalina.                                                                                      | Fractura | Sistema cristalino |
 | ------------------------------------------------------------------------ | -------- | ------------------------------------------------- | -------------------------------- | ---------- | --------- | ----- | --------------- | -------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------ |
 | Blanco o incoloro a amarillento, verdoso, rosado, cafeciento, multicolor | Incoloro | Vitreo, perlado<br><br>Perfecta, en una dirección | 2-2.5                            |            | Elastica  |       | 2.7-3.0         | Transparente y translucido |      | Tabular paralelo al clivaje. a menudo de contorno hexagonal; también foliado, escamoso; de textura fina escamosa a fibrosa. | Micacea  | Monoclinico        |
+
+
+![Pasted image 20261026181439.jpg](imagenes/Pasted%20image%2020261026181439.jpg)
+
+[![](https://www.mindat.org/imagecache/75/48/07333140017335366447282.jpg)
+
+### Muscovite
+
+Linópolis, Divino das Laranjeiras, Minas Gerais, Brazil
+
+It is obvious why this is called "star" muscovite, and these specimens are just so unique and attractive for a mineral that is usually overlooked as rather dull. Just really pretty, is it not? 5.9 x 5.1 x 3.6 cm
+
+© Rob Lavinsky & irocks.com
+
+
+
+
+
+](https://www.mindat.org/photo-70800.html)

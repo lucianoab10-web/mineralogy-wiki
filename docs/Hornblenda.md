@@ -4,13 +4,17 @@ tags:
   - resuelto
   - metamorficos-lista
 ---
-Un silicato básico complejo de sodio, potasio, calcio, magnesio, hierro y aluminio, a menudo con algo de titanio; grupo de anfíboles.
-Mejores marcas de terreno: Ángulos de exfoliación de 56° y 124°, y color verde oscuro. 
-Especies similares: La turmalina carece de la buena exfoliación de la hornblenda, y la tremolita y la actinolita son más claras en color que la hornblenda. 
-Ambiente: La hornblenda es un mineral formador de rocas de algunas rocas plutónicas y metamórficas. Es un mineral esencial en granito, granodiorita, diorita y monzonita, y una roca plutónica compuesta en gran parte de hornblenda se llama hornblendita. La hornblenda también está presente en dacita, andesita y basalto de rocas volcánicas, y se encuentra con acmita y nefelina en pegmatitas de nefelina sienita; con albita y epidota en rocas verdes; y con almandina, biotita y corindón en esquistos y gneises de rocas metamórficas regionales.
 
-| Color               | Raya     | Brillo y Clivaje (exfoliación)                                                            | Dureza relativa (escala de Mohs) | Magnetismo | Tenacidad | Tacto | Peso específico | Diafanidad                                      | Olor | Hábito, morfología o forma cristalina.                                                                                      | Fractura                     | Sistema cristalino |
-| ------------------- | -------- | ----------------------------------------------------------------------------------------- | -------------------------------- | ---------- | --------- | ----- | --------------- | ----------------------------------------------- | ---- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------ |
-| Verde, cafe, negrro | Incolora | submetalico, vitreo, perlado, sedoso<br>Perfecto, en dos direcciones en forma de diamante | 5-6                              |            | Fragil    |       | 3.0-3.4         | Transparente a translucido en bordes astillados |      | cristales prismáticos que tienen una sección transversal en forma de diamante, tambien granular, columnar, fibroso, radiado | fractura desigual, astillada | Monoclinico        |
+| Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente |
+| ---- | ----------------------- | ------- | ------------------ | -------- |
+| Silicato básico complejo (Grupo de anfíboles) | Ángulos de exfoliación de 56° y 124°, y color verde oscuro a negro. | $$ (Ca,Na)_{2-3}(Mg,Fe,Al)_{5}(Si,Al)_{8}O_{22}(OH,F)_{2} $$ | La turmalina carece de exfoliación; tremolita y actinolita son de color más claro. | Mineral esencial en rocas plutónicas (granito, diorita, hornblendita), volcánicas (andesita, dacita) y metamórficas (esquistos, gneises, anfibolitas). |
 
-![Pasted image 20260923185025.png](imagenes/Pasted%20image%2020260923185025.png)
+| Color | Raya | Brillo | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad | Hábito, morfología o forma cristalina. | Fractura | Sistema cristalino | Obs. |
+| ----- | ---- | ------ | --------------------- | -------------------------------- | --------- | --------------- | ---------- | -------------------------------------- | -------- | ------------------ | ---- |
+| Verde oscuro, marrón, negro | Incolora | Submetálico, vítreo, perlado, sedoso | Perfecto en dos direcciones en forma de diamante (56°/124°) | 5 - 6 | Frágil | 3.0 - 3.4 | Transparente a traslúcido en bordes astillados | Cristales prismáticos con sección transversal rómbica, granular, columnar, fibroso, radiado | Desigual, astillada | Monoclínico | |
+
+
+| imagen | nota |
+| ------ | ---- |
+| ![Pasted image 20260923185025.png](imagenes/Pasted%20image%2020260923185025.png) | Hornblende. Studsdalen, Kragerø, Telemark, Norway. [Mindat](https://www.mindat.org/photo-57342.html) |
+| ![Pasted image 20261026181004.jpg](imagenes/Pasted%20image%2020261026181004.jpg) | Hornblende, Anorthite. Branham Lakes, Madison County, Montana, USA. [Mindat](https://www.mindat.org/photo-1722803.html) |

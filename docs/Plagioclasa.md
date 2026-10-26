@@ -4,12 +4,17 @@ tags:
   - metamorficos-lista
   - resuelto
 ---
-Una serie de mezclas de silicatos de aluminio sódico y cálcico, de la [[albita]] (miembro final rico en sodio), pasando por oligoclasa, andesina, labradorita y bytownita hasta la [[anortita]] (miembro final rica en calcio)
-$$ NaAlSi_{3}O_{8} (albita) $$
-$$ CaAl_{2}Si_{2}O_{8} (anortita) $$ 
 
-| Color                                                                                                                         | Raya   | Brillo                                               | Clivaje (exfoliación)                                                                                                                                            | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad                 | Hábito, morfología o forma cristalina.                                         | Fractura | Sistema cristalino | Obs. |
-| ----------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | --------- | --------------- | -------------------------- | ------------------------------------------------------------------------------ | -------- | ------------------ | ---- |
-| Blanco, incoloro, gris, verde, azulado, rojizo; a veces juego de colores (albita y labradorita), azul, verde, amarillo, rojo. | Blanca | vítreo; frecuentemente perlado en el clivaje<br><br> | Bueno en dos direcciones casi en ángulos rectos, malo en una tercera dirección; estrías de maclado a menudo en las fisuras; las fisuras frecuentemente curvadas. | 6                                | frágil    | 2.62 to 2.76    | transparente a translúcida | Maclado multiple.<br>Aplanados usualmente, formando navajas degalfas en matrix | desigual | Triclínico         |      |
+| Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente |
+| ---- | ----------------------- | ------- | ------------------ | -------- |
+| Serie de feldespatos (tectosilicatos) | Estrías de maclado polisintético en planos de clivaje y dureza 6. | $$ NaAlSi_{3}O_{8} - CaAl_{2}Si_{2}O_{8} $$ | Feldespatos potásicos (no presentan las estrías características de maclado de albita). | Ampliamente extendido en rocas ígneas (gabro, basalto, diorita, granito) y metamórficas (esquistos, anfibolitas, gneises). |
 
-Los feldespatos plagioclasa son importantes minerales formadores de rocas y se encuentran en muchos tipos de rocas ígneas y metamórficas. La labradorita y la bytownita se encuentran con hornblenda y augita en gabro de rocas plutónicas; labradorita con hornblenda en basalto de rocas volcánicas; andesina con biotita y hornblenda en diorita y monzonita de rocas plutónicas; andesina con augita en andesita de rocas volcánicas; oligoclasa con biotita y hornblenda en monzonita de rocas plutónicas; albita con nefelina y acmita en pegmatitas y carbonatitas de sienita nefelina; albita en piedra verde de rocas metamórficas de contacto; albita en esquisto, metacuarcita y esquistos azules de rocas metamórficas regionales; albita como masas de láminas en pegmatitas de granito; y anortita en serpentinita de rocas metamórficas hidrotermales y con calcita y espinela en hornfels de rocas metamórficas de contacto
+| Color | Raya | Brillo | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad | Hábito, morfología o forma cristalina. | Fractura | Sistema cristalino | Obs. |
+| ----- | ---- | ------ | --------------------- | -------------------------------- | --------- | --------------- | ---------- | -------------------------------------- | -------- | ------------------ | ---- |
+| Blanco, incoloro, gris, verde, azulado, rojizo; iridiscente (albita/labradorita) | Blanca | Vítreo, perlado en el clivaje | Bueno en dos direcciones a ~90°, malo en una tercera | 6 | Frágil | 2.62 - 2.76 | Transparente a traslúcida | Tabular, maclado múltiple forming láminas o navajas delgadas en matriz. | Irregular | Triclínico | Serie de solución sólida desde [[albita]] (Na) hasta [[anortita]] (Ca), pasando por oligoclasa, andesina, labradorita y bytownita. |
+
+
+| imagen | nota |
+| ------ | ---- |
+| ![Pasted image 20261026183743.jpg](imagenes/Pasted%20image%2020261026183743.jpg) | Anorthite (Var: Labradorite). Minas Gerais, Brazil. [Mindat](https://www.mindat.org/photo-15140.html) |
+| ![Pasted image 20261026183812.jpg](imagenes/Pasted%20image%2020261026183812.jpg) | Albite (Var: Oligoclase), Fluorite. Vicente Marinho quarry, Mantena, Minas Gerais, Brazil. [Mindat](https://www.mindat.org/photo-131634.html) |
