@@ -16,4 +16,18 @@ Ambiente: La estaurolita se encuentra con albita, biotita y sillimanita en gneis
 | --------------------------------------------------------- | ----------------- | -------------------- | --------------------------------------------- | -------------------------------- | --------- | --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------- | ---- |
 | Marron rojizo oscuro a marron negroso, marron amarillento | Blanco a grisaceo | Subvitreo a resinoso | Pobre, en una dirección de sentido a lo largo | 7-7.5                            | Fragil    | 3.74-3.83       | Transparente a opaca | solo o maclado.<br>Los cristales maclados muestran dos cristales individuales entrelazados a casi 60° o casi 90°. | sub-concoidal | pseudo-ortorombico. Monoclinico |      |
 
-![Pasted image 20260927152850.png](imagenes/Pasted%20image%2020260927152850.png)
+![Pasted image 20260927152850.png](imagenes/Pasted%20image%2020260927152850.png)[
+### Staurolite
+
+Pestsovye Keivy, Keivy Mountains, Lovozersky District, Murmansk Oblast, Russia
+
+28 x 28 x 12 mm asterix-shaped staurolite triple twin in mica schist. RFC 2034.
+
+© 2009 Michael C. Roarke ](https://www.mindat.org/photo-258551.html)
+
+![Pasted image 20261026175840.jpg](imagenes/Pasted%20image%2020261026175840.jpg)
+
+
+
+
+
