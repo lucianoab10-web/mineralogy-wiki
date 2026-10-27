@@ -2,16 +2,17 @@
 tags:
 ---
 
-| Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente | Observaciones | Depósitos | Asociación |
-| ---- | ----------------------- | ------- | ------------------ | -------- | ------------- | --------- | ---------- |
-|      |                         |         |                    |          |               |           |            |
+| Tipo    | Mejores marcas de campo                                                                                  | Formula                      | Especies similares | Ambiente | Observaciones | Depósitos                                                                                                                                             | Asociación                                          |
+| ------- | -------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------ | -------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Haluros | Soluble en H₂O; deliquescente en condiciones de alta humedad, tras lo cual se disuelve; de sabor amargo. | $$ KMgCl_{3}\cdot 6H_{2}O $$ |                    |          |               | Se cree que se forman en depósitos marinos salinos mediante la reacción de minerales salinos preexistentes con fluidos con alto contenido en potasio. | Kieserita, silvita, halita, polihalita, bischofita. |
 
-| Color | Raya | Brillo | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad | Hábito, morfología o forma cristalina. | Fractura | Sistema cristalino |
-| ----- | ---- | ------ | --------------------- | -------------------------------- | --------- | --------------- | ---------- | -------------------------------------- | -------- | ------------------ |
-|       |      |        |                       |                                  |           |                 |            |                                        |          |                    |
+| Color                                                                 | Raya   | Brillo  | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad                | Hábito, morfología o forma cristalina.                                                                                                                                     | Fractura  | Sistema cristalino |
+| --------------------------------------------------------------------- | ------ | ------- | --------------------- | -------------------------------- | --------- | --------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------ |
+| De color amarillo a blanco, rojizo, rara vez blanco, incoloro o azul. | Blanca | Grasoso | ninguno observado     | 2.5                              |           | 1.6             | Transparente, translúcido | Cristales raros, pseudohexagonales; piramidales, también tabulares gruesos en pseudo-{OOOl}; habitualmente granulares, masivos, en yacimientos de varios metros de espesor | concoidal | Ortorrómbico       |
 
 
-| imagen | nota |
-| ------ | ---- |
-|        |      |
+| imagen                               | nota                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Pasted image 20261027190951.jpg](imagenes/Pasted%20image%2020261027190951.jpg) | [![](https://www.mindat.org/imagecache/82/99/04347320017362633516846.jpg)<br><br>### Carnallite<br><br>U. S. Potash Co. Mine, Carlsbad Potash Mining District, Eddy County, New Mexico, USA<br><br>Translucent crystalline. 5 cm specimen. S283-04 Specimen courtesy of Excalibur Mineral Company.<br><br>© 2007, JGW<br><br><br><br><br><br>](https://www.mindat.org/photo-138209.html) |
+| ![Pasted image 20261027191006.jpg](imagenes/Pasted%20image%2020261027191006.jpg) | [![](https://www.mindat.org/imagecache/b3/bf/06592470017362719405616.jpg)<br><br>### Carnallite<br><br>Carlsbad Potash Mining District, Eddy County, New Mexico, USA<br><br>Carnallite<br><br>© Charles Creekmur<br><br><br><br><br><br>](https://www.mindat.org/photo-1309017.html)                                                                                                     |
 
