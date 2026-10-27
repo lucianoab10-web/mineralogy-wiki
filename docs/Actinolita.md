@@ -14,7 +14,7 @@ tags:
 | Verde brillante a verde grisáceo | Blanca | Vítreo, sedoso | Perfecto en dos direcciones (56° y 124°) | 5 - 6 | Frágil | 3.03 - 3.24 | Transparente a traslúcido | Acicular, en hoja (bladed), columnar, granular a masivo | Astillado | Monoclínico | Forma una serie con la tremolita y la ferroactinolita. Asociación: talco, epidota, clorita, glaucófano, albita. |
 
 
-| imagen | nota |
-| ------ | ---- |
-| ![Pasted image 20261026180523.jpg](imagenes/Pasted%20image%2020261026180523.jpg) | Actinolite. Vitória da Conquista, Bahia, Brazil. [Mindat](https://www.mindat.org/photo-216680.html) |
+| imagen                               | nota                                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| ![Pasted image 20261026180523.jpg](imagenes/Pasted%20image%2020261026180523.jpg) | Actinolite. Vitória da Conquista, Bahia, Brazil. [Mindat](https://www.mindat.org/photo-216680.html)           |
 | ![Pasted image 20261026180556.jpg](imagenes/Pasted%20image%2020261026180556.jpg) | Actinolite. Westfield, Hampden County, Massachusetts, USA. [Mindat](https://www.mindat.org/photo-408575.html) |
