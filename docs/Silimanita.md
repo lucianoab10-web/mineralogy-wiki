@@ -14,6 +14,6 @@ tags:
 | Blanco grisáceo, marrón, marrón verdoso | Incolora / Blanca | Vítreo, sedoso | Perfecto, en una dirección en sentido del lado más largo | 6 - 7 | Resistente en su conjunto | 3.2 - 3.3 | Transparente a traslúcido | Generalmente masas fibrosas, columnar, radiante; cristales prismáticos distintos son raros. | Desigual | Ortorrómbico | |
 
 
-| imagen | nota |
-| ------ | ---- |
-| ![Pasted image 20260927131801.png](imagenes/Pasted%20image%2020260927131801.png) | |
+| imagen                               | nota |
+| ------------------------------------ | ---- |
+| ![Pasted image 20260927131801.png](imagenes/Pasted%20image%2020260927131801.png) |      |
