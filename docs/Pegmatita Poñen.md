@@ -7,7 +7,8 @@ tags:
 
 ### Introducción
 
-### Datos
+Las pegmatitas son diques o segregaciones de grano grueso que suelen tener una composición granítica. La mayoría se forma a partir de magma granítico rico en fluidos y enriquecido en elementos que no se incorporan a los minerales formadores de roca durante la cristalización de un plutón. Una pequeña fracción de las pegmatitas del mundo contiene minerales poco comunes, entre ellos berilo, turmalina, topacio, espodumena (piroxeno de litio) y espesartina de calidad gema. Las pegmatitas también son fuentes importantes de minerales industriales y de metales estratégicos.
+### Datos (reorganizarlos dentro de los otros segmentos de la presentación)
 
 "(f) Magmatic and migmatic rocks, Cordillera Nahuelbuta FLO1 (36°46.5150S, 72°48.7870W; Road from Concepción to Florida, Bridge #6, Loc. Poñen) Granitic pegmatite. Gradual contact to granite, late magmatc stage. In places development of ‘‘graphic granite”. No deformation. Assemblage: plagioclase, K-feldspar, quartz, white mica, biotite, garnet, zircon, monazite" (Glodny et al., 2008, p. 410)
 
