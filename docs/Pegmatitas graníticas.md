@@ -1,4 +1,4 @@
 ---
 tags:
 ---
-Las pegmatitas son diques o segregaciones de grano grueso que suelen tener una composición granítica. La mayoría se forma a partir de magma granítico rico en fluidos y enriquecido en elementos que no se incorporan a los minerales formadores de roca durante la cristalización de un plutón. Una pequeña fracción de las pegmatitas del mundo contiene minerales poco comunes, entre ellos berilo, turmalina, topacio, espodumena (piroxeno de litio) y espesartina de calidad gema. Las pegmatitas también son fuentes importantes de minerales industriales y de metales estratégicos.
+"Pegmatites are coarse-grained dikes or segregations that usually have a granitic composition. Most form from fluid-rich granitic magma enriched in elements that are not incorporated into rockforming minerals during crystallization of a pluton. A small fraction of the world’s pegmatites contain uncommon minerals, including gem-quality beryl, tourmaline, topaz, spodumene (Li-pyroxene), and spessartine. Pegmatites are also important sources of industrial minerals and strategic metals." (Frost, p. 154)
