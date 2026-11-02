@@ -70,6 +70,10 @@ tags:
 ![Pasted image 20261101174829.png](imagenes/Pasted%20image%2020261101174829.png)
 (Crisóstomo, 2017, p. 13)
 
+
+![Pasted image 20261102205409.png](imagenes/Pasted%20image%2020261102205409.png)
+(Alarcón, 2019, p. 75)
+
 "Las pegmatitas de Poñen, Cuyanmahuida y Vertientes se emplazan en los Granitoides de Concepción, catalogados según Creixell, (2001) como granitoides tipo S, asociado a magmas peraluminosos." (Crisóstomo, 2017, p. 15)
 
 "ČERNÝ, P., & ERCIT, T. S. 2005. The classification of granitic pegmatites revisited. The Canadian Mineralogist, 43(6)." (Crisóstomo, 2017, p. 16)
