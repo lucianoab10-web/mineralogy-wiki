@@ -10,7 +10,7 @@ Color y brillo: Negro, negro parduzco, negro verdoso, verde oscuro; perlado, sub
 Dureza: 2½–3
 Exfoliación: Perfecta, en una dirección.
 Otros datos: Densidad relativa de 2,8 a 3,4; láminas delgadas tenaces y muy elásticas, que se vuelven más frágiles con la alteración; opacas a translúcidas.
-
+Semitransparente
 Cristales: Monoclínicos; los buenos cristales son comunes, generalmente tabulares, a veces de forma de barril; también en placas y escamas. Mejores rasgos de identificación en campo: color oscuro y, por lo general, cristales pequeños.
 
 Especies similares: La biotita tiene un color más oscuro que la moscovita y no aparece en calizas metamórficas como sí lo hace la flogopita. Ambiente: La biotita es un mineral accesorio común en rocas plutónicas, volcánicas y ciertas rocas metamórficas (esquistos y gneises). Aparece junto con cuarzo y ortoclasa en pegmatitas graníticas; en granito, granodiorita, diorita y monzonita de las rocas plutónicas; en riolita, andesita y dacita de las rocas volcánicas; con albita y hornblenda en rocas verdes (greenstone) y corneanas de las rocas metamórficas de contacto; y con albita, feldespato, andalucita y almandino en esquistos y gneises de las rocas metamórficas regionales.
