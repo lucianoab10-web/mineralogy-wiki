@@ -15,3 +15,5 @@ Cristales: Monoclínico; la antigorita no se conoce en cristales, generalmente e
 Mejores marcas de campo: Dureza baja. Cualquier masa rocosa de color verde oscuro, con una dureza de 3 a 4 y una sensación grasa al tacto, puede sospecharse que contiene los minerales del grupo de la serpentina. La crisotilo es blanda y flexible.
 Especies similares: Los minerales serpentinos son más duros que el talco, pero más blandos que la nefrita. El crisótilo es más blando y más flexible que el amianto tremolita.
 Ambiente: Los minerales serpentina son los constituyentes principales de la roca serpentinita, que generalmente se forma a partir de peridotita mediante procesos metamórficos hidrotermales.
+
+![IMG_0538.jpg](imagenes/IMG_0538.jpg)

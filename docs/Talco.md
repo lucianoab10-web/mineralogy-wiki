@@ -68,3 +68,5 @@ Status: COMMON mineral. Light to dark green crystals, silky to the touch, very l
 
 
 ](https://www.mindat.org/photo-1638960.html)
+
+![IMG_0540.jpg](imagenes/IMG_0540.jpg)
