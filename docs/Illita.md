@@ -44,3 +44,12 @@ Transparencia: translúcido.
 Tenacidad: Elástica
 Exfoliación: Perfecto
 Fractura: micácea
+
+Como identificar:
+- Raya: baldosa sin esmaltar. Arrástrala por la parte posterior de una baldosa cerámica. La illita deja una raya blanca o no deja ninguna.
+- Dureza: moneda de cobre. Una moneda de cobre (3,5) la raya con facilidad. Una cuchilla de acero (5,5) la raya con facilidad, y no raya el cristal.
+
+
+Dureza de Mohs: 1–2. Una moneda de cobre la raya con facilidad; una cuchilla de acero la raya con facilidad.
+Sistema cristalino: monoclínico
+Aspecto: terroso
