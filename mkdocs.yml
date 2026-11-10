@@ -20,7 +20,46 @@ extra_javascript:
 
 hooks:
   - hooks/obsidian_images.py
+  - hooks/mineral_navigation.py
 
 extra:
   image_dirs:
     - 'C:/Users/Luciano/iCloudDrive/iCloud~md~obsidian/my-notes/compartidos/second-brain/imagenes'
+  # La navegación cambia solo en la web; las notas y sus URL conservan su ruta.
+  # Las fichas nuevas se detectan por tags: [minerales] o su tabla de propiedades.
+  mineral_navigation:
+    title: Fichas de minerales
+    # Fichas en prosa que todavía no llevan la etiqueta minerales.
+    include:
+      - Biotita.md
+      - Caolinita.md
+      - Enstatita.md
+      - Esmectitas.md
+      - Illita.md
+      - Serpentina.md
+      - Talco.md
+      - Tremolita.md
+    references:
+      - fdg-tabla-minerales-completa.md
+      - fdg-tabla-minerales.md
+      - Fichas_Minerales_Parte2_Detallado.md
+      - Fichas_Minerales_Parte3_Restantes.md
+      - Guia_Identificacion_Minerales_por_Propiedades.md
+      - tabla_identificacion_55_minerales.md
+    # Estas notas ya existen en el vault, pero todavía están vacías.
+    pending:
+      - Anfíboles Amp.md
+      - Arcillas.md
+      - Carbonatos.md
+      - Circón.md
+      - Cuarzo secundario.md
+      - Feldespatos potásicos.md
+      - Microclina Mc.md
+      - Montmorillonita.md
+      - Olivino Ol.md
+      - Ortoclasa Or.md
+      - Piroxenos Px.md
+      - Sericita.md
+      - Titanita.md
+    templates:
+      - baseminerales.md
