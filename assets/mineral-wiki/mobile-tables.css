@@ -1,0 +1,118 @@
+.mineral-table-controls,
+.mineral-cards {
+  display: none;
+}
+
+.md-typeset .arithmatex {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .md-content,
+  .md-content__inner {
+    min-width: 0;
+  }
+
+  .mineral-table-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    margin: 1.1rem 0 .5rem;
+    color: var(--md-default-fg-color--light);
+    font-size: .65rem;
+  }
+
+  .mineral-table-toggle {
+    padding: .45rem .65rem;
+    border: 1px solid var(--md-primary-fg-color);
+    border-radius: .25rem;
+    background: var(--md-default-bg-color);
+    color: var(--md-primary-fg-color);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    min-height: 44px;
+  }
+
+  .mineral-table-toggle:focus-visible {
+    outline: 3px solid var(--md-accent-fg-color);
+    outline-offset: 2px;
+  }
+
+  .mineral-cards {
+    display: block;
+    min-width: 0;
+  }
+
+  .mineral-card {
+    margin-bottom: .7rem;
+    padding: .2rem .8rem;
+    border: 1px solid var(--md-typeset-table-color);
+    border-radius: .35rem;
+    background: var(--md-default-bg-color);
+    overflow-wrap: anywhere;
+    min-width: 0;
+  }
+
+  .mineral-card__title {
+    margin: .6rem 0 .2rem !important;
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--md-primary-fg-color);
+  }
+
+  .md-typeset .mineral-card dl {
+    margin: 0;
+  }
+
+  .mineral-card__field {
+    padding: .6rem 0;
+  }
+
+  .mineral-card__field + .mineral-card__field {
+    border-top: 1px solid var(--md-typeset-table-color);
+  }
+
+  .md-typeset .mineral-card dt {
+    margin: 0 0 .25rem;
+    color: var(--md-default-fg-color--light);
+    font-size: .7rem;
+    font-weight: 700;
+  }
+
+  .md-typeset .mineral-card dd {
+    margin: 0;
+    font-size: .8rem;
+    line-height: 1.6;
+    min-width: 0;
+  }
+
+  .mineral-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: .2rem auto;
+  }
+
+  .mineral-card .arithmatex,
+  .mineral-card mjx-container {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .md-typeset .mineral-card mjx-container {
+    font-size: 100% !important;
+  }
+
+  /* Compact two-column reference tables retain their natural vertical layout. */
+  .md-typeset table:not([class]) td {
+    overflow-wrap: anywhere;
+  }
+
+  .md-typeset__scrollwrap[hidden],
+  .md-typeset table[hidden] {
+    display: none !important;
+  }
+}
