@@ -16,11 +16,18 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
+  - assets/mineral-wiki/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/mineral-wiki/mobile-tables.js
+
+extra_css:
+  - assets/mineral-wiki/mobile-tables.css
 
 hooks:
   - hooks/obsidian_images.py
   - hooks/mineral_navigation.py
+  - hooks/mineral_math.py
+  - hooks/site_assets.py
 
 extra:
   image_dirs:
