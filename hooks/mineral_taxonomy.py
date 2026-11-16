@@ -212,6 +212,8 @@ def classification_html(matches, page, files):
     target = files.get_file_from_path(INDEX_URI)
     start = page.url if not page.url or page.url.endswith("/") else posixpath.dirname(page.url)
     url = quote(posixpath.relpath(target.url, start or "."), safe="/%")
+    if target.url.endswith("/"):
+        url += "/"
     if not matches:
         links = f'<a href="{url}#sin-clasificar">Sin clasificar</a>'
     else:

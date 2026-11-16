@@ -109,6 +109,7 @@ extra:
             self.assertIn('data-mineral-id="Talco.md"', rendered)
             self.assertIn("Nota original", rendered)
             self.assertIn("Hojas", rendered)
+            self.assertIn("../clasificacion-minerales/#grupo-", rendered)
             self.assertEqual((root / "docs/Talco.md").read_text(), talc)
             overview = (root / "site/clasificacion-minerales/index.html").read_text()
             self.assertIn("Hojas (1)", overview)
