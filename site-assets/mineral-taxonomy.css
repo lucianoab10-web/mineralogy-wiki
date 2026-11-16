@@ -1,0 +1,5 @@
+.mineral-classification { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25em .5em; margin: .3em 0 1.5em; padding: .65em .9em; border-left: 3px solid var(--md-accent-fg-color, #448aff); border-radius: 0 .3em .3em 0; background: var(--md-code-bg-color, #f4f5f6); font-size: .9em; line-height: 1.8; }
+.mineral-classification__label { color: var(--md-default-fg-color--light, #53605b); }
+.mineral-classification__path { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: .25em; }
+.mineral-classification a { overflow-wrap: anywhere; }
+.mineral-classification__separator { color: var(--md-default-fg-color--light, #53605b); }

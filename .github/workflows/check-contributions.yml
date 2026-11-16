@@ -1,4 +1,4 @@
-name: Check mineral photo integration
+name: Check mineral wiki
 on:
   pull_request:
 permissions:
@@ -19,6 +19,8 @@ jobs:
           node --check site-assets/mobile-tables.js
       - name: Install MkDocs
         run: python -m pip install mkdocs-material mkdocs-roamlinks-plugin
+      - name: Test taxonomy and Obsidian tag integration
+        run: python -m unittest discover -s tests -v
       - name: Build all wiki pages
         run: python -m mkdocs build
       - name: Validate generated mineral catalogue

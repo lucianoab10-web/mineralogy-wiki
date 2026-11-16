@@ -14,8 +14,12 @@ from pathlib import PurePosixPath
 
 from mkdocs.exceptions import ConfigurationError
 from mkdocs.utils.meta import get_data
+from mkdocs.structure.files import File
+from mineral_taxonomy import INDEX_URI, classification_html, index_markdown, load_taxonomy, sidebar
 
 log = logging.getLogger("mkdocs.hooks.mineral_navigation")
+_taxonomy = None
+_classifications = {}
 
 
 def _plain(text):
@@ -82,6 +86,9 @@ def _navigation(paths):
 
 
 def on_files(files, config, **kwargs):
+    global _taxonomy
+    _taxonomy = None
+    _classifications.clear()
     options = (config.get("extra") or {}).get("mineral_navigation") or {}
     pages = {
         file.src_uri: file for file in files
@@ -112,11 +119,28 @@ def on_files(files, config, **kwargs):
         path for path, file in pages.items()
         if path not in assigned and _is_mineral_sheet(file.content_string)
     }
-    minerals = sheets | pending | references | templates
+    context_uri = options.get("taxonomy_file")
+    context_paths = {context_uri} if context_uri else set()
+    sheets -= context_paths
+    minerals = sheets | pending | references | templates | context_paths
     if not minerals:
         return files
 
     children = sorted(sheets, key=_path_sort)
+    if context_uri:
+        _taxonomy = load_taxonomy(config, files, context_uri)
+        for path in sheets | pending:
+            _, metadata = get_data(pages[path].content_string)
+            _classifications[path] = _taxonomy.classify(metadata)
+        classified_pending = {path for path in pending if _classifications[path]}
+        children = sidebar(_taxonomy, _classifications, sheets | classified_pending, _path_sort)
+        pending -= classified_pending
+        if files.get_file_from_path(INDEX_URI) is not None:
+            raise ConfigurationError(f"La ruta {INDEX_URI} está reservada para el índice generado de clasificación.")
+        files.append(File.generated(config, INDEX_URI, content=index_markdown(_taxonomy, _classifications, _path_sort)))
+        conflicts = [path for path, matches in _classifications.items() if len(matches) > 1]
+        if conflicts:
+            log.warning("Clasificación por revisar (etiquetas de varias ramas): %s", ", ".join(sorted(conflicts)))
     for title, paths in (("Tablas y guías", references), ("Por completar", pending), ("Plantillas", templates)):
         if paths:
             children.append({title: sorted(paths, key=_path_sort)})
@@ -126,3 +150,10 @@ def on_files(files, config, **kwargs):
     config["nav"] = home + [{options.get("title", "Fichas de minerales"): children}] + _navigation(remaining - set(home))
     log.info("mineral_navigation: %d fichas; %d páginas en la sección; %d notas generales.", len(sheets), len(minerals), len(remaining))
     return files
+
+
+def on_page_content(html_content, page, files, **kwargs):
+    if _taxonomy is None or page.file.src_uri not in _classifications:
+        return html_content
+    return classification_html(_classifications[page.file.src_uri], page, files) + html_content
+
