@@ -24,6 +24,7 @@ extra_javascript:
 extra_css:
   - assets/mineral-wiki/mobile-tables.css
   - assets/mineral-wiki/contributions.css
+  - assets/mineral-wiki/mineral-taxonomy.css
 
 hooks:
   - hooks/obsidian_images.py
@@ -42,6 +43,8 @@ extra:
   # Las fichas nuevas se detectan por tags: [minerales] o su tabla de propiedades.
   mineral_navigation:
     title: Fichas de minerales
+    # La nota del vault tiene prioridad sobre el modelo de taxonomy/.
+    taxonomy_file: Taxonomia_minerales.md
     # Fichas en prosa que todavía no llevan la etiqueta minerales.
     include:
       - Biotita.md
