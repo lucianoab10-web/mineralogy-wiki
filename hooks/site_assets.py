@@ -6,9 +6,10 @@ from mkdocs.structure.files import File
 
 def on_files(files, config, **kwargs):
     source = Path(config.config_file_path).parent / "site-assets"
-    for name in ("mathjax.js", "mobile-tables.js", "mobile-tables.css"):
+    for name in ("mathjax.js", "mobile-tables.js", "mobile-tables.css", "contributions.js", "contributions.css"):
         uri = f"assets/mineral-wiki/{name}"
         if files.get_file_from_path(uri) is not None:
             raise ValueError(f"La ruta de recursos web ya existe en docs: {uri}")
         files.append(File.generated(config, uri, abs_src_path=str(source / name)))
     return files
+
