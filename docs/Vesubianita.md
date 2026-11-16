@@ -1,0 +1,6 @@
+---
+tags:
+  - minerales
+  - sorosilicato
+---
+= [[Epidota]]
