@@ -108,6 +108,7 @@
       '<input class="mc-file" type="file" data-input="library" accept="image/*" aria-label="Elegir fotografía de la galería">' +
       '<input class="mc-file" type="file" data-input="file" accept=".jpg,.jpeg,.png,.webp,.avif,.heic,.heif,.gif,.bmp" aria-label="Elegir un archivo de imagen">' +
       '<div class="mc-preview" hidden><img alt="Vista previa de tu fotografía"><p class="mc-filename"></p><button type="button" class="mc-remove">Quitar foto</button></div>' +
+      '<label class="mc-permission"><input name="unabCollection" type="checkbox"><span>Usar descripción de la Colección UNAB, Concepción</span></label>' +
       '<label class="mc-field"><span>Nota / descripción de la fotografía</span><textarea name="description" rows="4" maxlength="1800" placeholder="Localidad, tamaño del ejemplar, rasgos que se aprecian…"></textarea><small>Aparecerá en la columna «nota», junto a la imagen.</small></label>' +
       '<label class="mc-field"><span>Autor de la fotografía <small>(opcional)</small></span><input name="author" type="text" maxlength="120" autocomplete="name"></label>' +
       '<label class="mc-permission"><input name="permission" type="checkbox" required><span>Tengo permiso para publicar esta fotografía y su descripción.</span></label>' +
@@ -115,6 +116,16 @@
       '<button class="mc-submit" type="submit" disabled>Enviar para revisión</button><p class="mc-status" role="status" aria-live="polite"></p></form></details>';
     const form = root.querySelector("form"), submit = root.querySelector(".mc-submit"), status = root.querySelector(".mc-status"), preview = root.querySelector(".mc-preview");
     let prepared = null, previewUrl = null, requestId = crypto.randomUUID(), busy = false, preparing = false, selection = 0;
+    const collection = form.elements.unabCollection, description = form.elements.description;
+    const collectionDescription = (root.dataset.mineralName || mineral.split("/").pop().replace(/\.md$/i, "")) + ", (+) Colección UNAB, Concepción";
+    let customDescription = "";
+    collection.addEventListener("change", () => {
+      if (collection.checked) { customDescription = description.value; description.value = collectionDescription; }
+      else description.value = customDescription;
+      description.readOnly = collection.checked;
+      requestId = crypto.randomUUID();
+    });
+    form.addEventListener("reset", () => { customDescription = ""; description.readOnly = false; });
     if (root.dataset.uploadOnly === "true") root.querySelector("details").open = true;
     function message(text, error) { status.textContent = text; status.classList.toggle("mc-error", !!error); }
     function remove() { selection++; prepared = null; if (previewUrl) URL.revokeObjectURL(previewUrl); previewUrl = null; preview.hidden = true; preview.querySelector("img").removeAttribute("src"); submit.disabled = true; root.querySelectorAll('input[type="file"]').forEach(input => { input.value = ""; }); }
