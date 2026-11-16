@@ -19,17 +19,23 @@ extra_javascript:
   - assets/mineral-wiki/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/mineral-wiki/mobile-tables.js
+  - assets/mineral-wiki/contributions.js
 
 extra_css:
   - assets/mineral-wiki/mobile-tables.css
+  - assets/mineral-wiki/contributions.css
 
 hooks:
   - hooks/obsidian_images.py
   - hooks/mineral_navigation.py
   - hooks/mineral_math.py
   - hooks/site_assets.py
+  - hooks/mineral_contributions.py
 
 extra:
+  photo_contributions:
+    api_url: https://mineralogy-photo-submissions.knobbyion6.chatgpt.site
+    review_url: https://mineralogy-photo-review.knobbyion6.chatgpt.site
   image_dirs:
     - 'C:/Users/Luciano/iCloudDrive/iCloud~md~obsidian/my-notes/compartidos/second-brain/imagenes'
   # La navegación cambia solo en la web; las notas y sus URL conservan su ruta.
@@ -70,3 +76,4 @@ extra:
       - Titanita.md
     templates:
       - baseminerales.md
+
