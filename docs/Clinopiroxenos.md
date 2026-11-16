@@ -11,7 +11,7 @@ tags:
 
 | Color | Raya | Brillo | Clivaje (exfoliación) | Dureza relativa (escala de Mohs) | Tenacidad | Peso específico | Diafanidad | Hábito, morfología o forma cristalina. | Fractura | Sistema cristalino | Obs. |
 | ----- | ---- | ------ | --------------------- | -------------------------------- | --------- | --------------- | ---------- | -------------------------------------- | -------- | ------------------ | ---- |
-| Verde, negro, castaño, incoloro | Incolora a verdosa | Vítreo a resinoso | Bueno en dos direcciones a ~87° y 93° | 5 - 6.5 | Frágil | 3.2 - 3.6 | Transparente a opaco | Prismático corto, columnar, granular | Desigual a concoidal | Monoclínico | Incluye minerales como [[egirina]], [[Augita]], [[hedenbergita]] y [[diopsida]]. |
+| Verde, negro, castaño, incoloro | Incolora a verdosa | Vítreo a resinoso | Bueno en dos direcciones a ~87° y 93° | 5 - 6.5 | Frágil | 3.2 - 3.6 | Transparente a opaco | Prismático corto, columnar, granular | Desigual a concoidal | Monoclínico | Incluye minerales como [[egirina]], [[Augita]], [[hedenbergita]] y [[Diópsido]]. |
 
 
 | imagen | nota |

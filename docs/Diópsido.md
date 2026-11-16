@@ -1,5 +1,10 @@
 ---
 tags:
+  - minerales
+  - metamorficos-lista
+  - resuelto
+  - inosilicato
+  - cadena-simple
 ---
 
 | Tipo                                              | Mejores marcas de campo                                  | Formula               | Especies similares                                                                                                                                                           | Ambiente                                                                                                                                                                                        |

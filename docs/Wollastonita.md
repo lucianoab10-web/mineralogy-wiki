@@ -1,6 +1,8 @@
 ---
 tags:
   - minerales
+  - inosilicato
+  - cadena-doble
 ---
 
 | Tipo               | Mejores marcas de campo                      | Formula         | Especies similares                                                                                                                                                                                                                                            | Ambiente                                                                                                                                                                      | Observaciones | Depósitos                                                                                                                                                                                                             | Asociación                                                                           |
