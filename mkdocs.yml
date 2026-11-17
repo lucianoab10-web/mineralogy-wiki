@@ -36,6 +36,7 @@ hooks:
 extra:
   mineral_abbreviations:
     source: 'abreviaturas minerales (EN).md'
+    aliases: references/mineral-name-aliases.json
   photo_contributions:
     api_url: https://mineralogy-photo-submissions.knobbyion6.chatgpt.site
     review_url: https://mineralogy-photo-review.knobbyion6.chatgpt.site
