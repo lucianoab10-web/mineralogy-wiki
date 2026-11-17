@@ -67,6 +67,7 @@
     document.querySelectorAll("article table").forEach(function (table) {
       var existing = known.get(table);
       if (existing) {
+        existing.rows = Array.from(table.querySelectorAll("tbody > tr"));
         active.push(existing);
         render(existing);
         return;
@@ -108,9 +109,15 @@
     });
   }
 
+  document.addEventListener("mineral-tables:before-update", function (event) {
+    var state = known.get(event.detail && event.detail.table);
+    if (state) { restore(state); state.wrapper.hidden = false; }
+  });
+  document.addEventListener("mineral-tables:update", enhance);
   if (phone.addEventListener) phone.addEventListener("change", function () { active.forEach(render); });
   else phone.addListener(function () { active.forEach(render); });
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", enhance);
   else enhance();
   if (typeof document$ !== "undefined") document$.subscribe(enhance);
 }());
+
