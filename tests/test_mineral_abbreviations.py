@@ -1,4 +1,5 @@
 import importlib.util
+import re
 import shutil
 import tempfile
 import unittest
@@ -19,7 +20,7 @@ SOURCE = "abreviaturas minerales (EN).md"
 class MineralAbbreviations(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.source = (ROOT / "docs" / SOURCE).read_text(encoding="utf-8")
+        cls.source = (ROOT / "tests/fixtures/mineral-abbreviations.md").read_text(encoding="utf-8")
         cls.table = hook._table(cls.source)
         cls.aliases = hook._load_aliases(ROOT / "references/mineral-name-aliases.json")
 
@@ -31,6 +32,18 @@ class MineralAbbreviations(unittest.TestCase):
     def symbols(self, name, table=None):
         entries = hook._lookup(name, table or self.table, self.aliases)
         return tuple(entry.symbol for entry in entries) if entries else None
+
+
+    def change_symbol(self, source, mineral, symbol):
+        pattern = r"(?m)^(\|\s*)[^|\r\n]+(\|\s*" + re.escape(mineral) + r"\s*\|.*)$"
+        updated, count = re.subn(pattern, lambda match: match.group(1) + symbol + " " + match.group(2), source)
+        self.assertEqual(count, 1, "Expected exactly one test mineral row")
+        return updated
+
+    def test_compact_and_padded_tables_match_identically(self):
+        compact = "\n".join("| " + " | ".join(cell.strip() for cell in line.strip("|").split("|")) + " |" if line.startswith("|") else line for line in self.source.splitlines())
+        for name in ["Magnetita", "Talco", "Titanita", "Granate"]:
+            self.assertEqual(self.symbols(name, hook._table(compact)), self.symbols(name))
 
     def page(self, name, url=None):
         return SimpleNamespace(file=SimpleNamespace(src_uri=name + ".md"), title=name, url=url or name + "/", meta={})
@@ -47,7 +60,7 @@ class MineralAbbreviations(unittest.TestCase):
                 self.assertIsNone(self.symbols(name))
 
     def test_table_changes_are_authoritative(self):
-        updated = self.source.replace("| Tlc | talc | G |", "| Tlc2 | talc | G |")
+        updated = self.change_symbol(self.source, "talc", "Tlc2")
         self.assertNotEqual(updated, self.source)
         self.assertEqual(self.symbols("Talco", hook._table(updated)), ("Tlc2",))
 
@@ -81,7 +94,7 @@ class MineralAbbreviations(unittest.TestCase):
     def test_combined_sheet_requires_every_species_to_exist(self):
         name = "Tenantina - Tetrahidrita"
         self.assertEqual(self.symbols(name), ("Tnt", "Ttr"))
-        changed = self.source.replace("| Ttr | tetrahedrite | A |", "")
+        changed = re.sub(r"(?m)^\|\s*Ttr\s*\|[^\n]*\n?", "", self.source)
         self.assertIsNone(self.symbols(name, hook._table(changed)))
 
     def test_heading_preserves_markup_permalink_body_and_nested_links(self):
@@ -153,7 +166,7 @@ class MineralAbbreviations(unittest.TestCase):
             for name in ["Oro", "Guia", "baseminerales", SOURCE[:-3]]:
                 self.assertNotIn('class="mineral-abbreviation"', (root / "site" / name / "index.html").read_text(encoding="utf-8"))
             source = root / "docs" / SOURCE
-            source.write_text(self.source.replace("| Tlc | talc | G |", "| Tlc2 | talc | G |"), encoding="utf-8")
+            source.write_text(self.change_symbol(self.source, "talc", "Tlc2"), encoding="utf-8")
             build(load_config(str(config_path), strict=True))
             self.assertIn('>Tlc2</a>)</span>', (root / "site/subcarpeta/Talco/index.html").read_text(encoding="utf-8"))
 
