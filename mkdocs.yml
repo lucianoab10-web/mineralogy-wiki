@@ -46,6 +46,7 @@ extra:
   # Las fichas nuevas se detectan por tags: [minerales] o su tabla de propiedades.
   mineral_navigation:
     title: Fichas de minerales
+    classification: clasificacion minerales.md
     # Fichas en prosa que todavía no llevan la etiqueta minerales.
     include:
       - Biotita.md
@@ -57,6 +58,7 @@ extra:
       - Talco.md
       - Tremolita.md
     references:
+      - clasificacion minerales.md
       - abreviaturas minerales (EN).md
       - fdg-tabla-minerales-completa.md
       - fdg-tabla-minerales.md

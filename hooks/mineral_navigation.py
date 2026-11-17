@@ -8,9 +8,10 @@ Las excepciones y las notas sin completar se declaran en mkdocs.yml.
 from __future__ import annotations
 
 import logging
+import importlib.util
 import re
 import unicodedata
-from pathlib import PurePosixPath
+from pathlib import Path, PurePosixPath
 
 from mkdocs.exceptions import ConfigurationError
 from mkdocs.utils.meta import get_data
@@ -113,13 +114,27 @@ def on_files(files, config, **kwargs):
         if path not in assigned and _is_mineral_sheet(file.content_string)
     }
     minerals = sheets | pending | references | templates
+    source = options.get("classification")
+    if source is not None and (not isinstance(source, str) or not source.strip()):
+        raise ConfigurationError("extra.mineral_navigation.classification debe ser una ruta Markdown no vacia.")
+    if source:
+        module_path = Path(__file__).with_name("mineral_classification.py")
+        if not module_path.is_file():
+            raise ConfigurationError("Falta hooks/mineral_classification.py para leer la tabla de clasificacion.")
+        spec = importlib.util.spec_from_file_location("mineral_classification_navigation", module_path)
+        classifier = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(classifier)
+        catalog, aliases = classifier.load_reference(files, config, source)
+        children = classifier.classified_navigation(sheets, pages, catalog, aliases)
+        pending_children = classifier.classified_navigation(pending, pages, catalog, aliases)
+    else:
+        children = sorted(sheets, key=_path_sort)
+        pending_children = sorted(pending, key=_path_sort)
     if not minerals:
         return files
-
-    children = sorted(sheets, key=_path_sort)
-    for title, paths in (("Tablas y guías", references), ("Por completar", pending), ("Plantillas", templates)):
+    for title, paths in (("Tablas y guías", references), ("Por completar", pending_children), ("Plantillas", templates)):
         if paths:
-            children.append({title: sorted(paths, key=_path_sort)})
+            children.append({title: paths if title == "Por completar" else sorted(paths, key=_path_sort)})
 
     remaining = set(pages) - minerals
     home = sorted((path for path in remaining if path.casefold() in {"index.md", "readme.md"}), key=_path_sort)

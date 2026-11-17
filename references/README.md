@@ -29,3 +29,26 @@ fila distinta `sphene (titanite)`.
 
 El cambio se aplica al HTML generado. No modifica las notas de Obsidian, sus
 nombres de archivo, sus enlaces ni el catálogo de contribuciones fotográficas.
+
+## Clasificación automática de las fichas
+
+La tabla `docs/clasificacion minerales.md` define la ruta de navegación de cada
+identidad reconocida: Clase → Subclase → Familia → Subgrupo. La copia que se
+edita en Obsidian es `compartidos/second-brain/markdowns/clasificacion minerales.md`;
+la sincronización habitual la lleva a `docs`, igual que la tabla de abreviaturas.
+
+`hooks/mineral_classification.py` lee la tabla en cada compilación y
+`hooks/mineral_navigation.py` construye los grupos sin mover las fichas ni cambiar
+sus URL. Las columnas `Tipo`, `Nota` y `Fuentes` documentan el criterio, pero no
+añaden niveles al menú. La tabla explica qué ramas son conjuntos de estudio y
+qué nombres corresponden a series, grupos o mezclas.
+
+Las identidades se reconocen por nombres y equivalencias exactas. El JSON de
+alias identifica nombres españoles e ingleses; las clasificaciones proceden
+exclusivamente del Markdown. Si una ficha no se reconoce o sus identidades son
+contradictorias, permanece en «Por clasificar». Una fila ambigua en la tabla se
+informa como error de configuración. Las notas «Por completar» siguen separadas.
+
+No se asignan clasificaciones a partir de palabras parecidas, fórmulas o etiquetas.
+Una fila nueva puede preparar la clasificación de un mineral que todavía no tenga
+ficha, como un borato: la tabla no genera páginas minerales vacías.
