@@ -3,6 +3,25 @@
   const normalize = value => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
   const IMAGE_HEADERS = new Set(["imagen", "imagenes", "image", "images", "foto", "fotografia"]);
   const NOTE_HEADERS = new Set(["nota", "notas", "note", "descripcion", "comentario", "comentarios", "observaciones"]);
+  let decoderPromise;
+  function loadHeicDecoder(base) {
+    if (window.MineralHeicConverter?.heicTo) return Promise.resolve(window.MineralHeicConverter);
+    if (!decoderPromise) decoderPromise = new Promise((resolve, reject) => {
+      const script = document.createElement("script"); script.async = true;
+      script.src = base + "/vendor/heic-decoder-1.6.7.js";
+      const timer = setTimeout(() => { script.remove(); decoderPromise = null; reject(new Error("No se pudo cargar el conversor HEIC. Revisa tu conexión e inténtalo otra vez.")); }, 45000);
+      script.onload = () => { clearTimeout(timer); if (window.MineralHeicConverter?.heicTo) resolve(window.MineralHeicConverter); else { decoderPromise = null; reject(new Error("No se pudo iniciar el conversor HEIC.")); } };
+      script.onerror = () => { clearTimeout(timer); script.remove(); decoderPromise = null; reject(new Error("No se pudo cargar el conversor HEIC. Revisa tu conexión e inténtalo otra vez.")); };
+      document.head.appendChild(script);
+    });
+    return decoderPromise;
+  }
+  function isHeic(file) { return /\.hei[cf]$/i.test(file.name) || /^image\/hei[cf](?:-sequence)?$/i.test(file.type); }
+  async function nativeImage(blob) {
+    const url = URL.createObjectURL(blob), image = new Image(); image.src = url;
+    try { await image.decode(); return { source: image, width: image.naturalWidth, height: image.naturalHeight, release: () => { image.removeAttribute("src"); URL.revokeObjectURL(url); } }; }
+    catch (error) { URL.revokeObjectURL(url); throw error; }
+  }
   function imageTable(article) {
     for (const table of article.querySelectorAll("table")) {
       const headers = [...table.querySelectorAll("thead tr:first-child th")].map(th => normalize(th.textContent));
@@ -44,24 +63,37 @@
     }
     document.dispatchEvent(new CustomEvent("mineral-tables:update"));
   }
-  async function prepareImage(file) {
+  async function prepareImage(file, base = location.origin, notify = () => {}) {
     const type = file.type.toLowerCase();
-    if (/svg|xml|html/.test(type) || !(/\.(jpe?g|png|webp|avif|hei[cf]|gif|bmp)$/i.test(file.name) || /^image\/(jpeg|png|webp|avif|heic|heif|gif|bmp)$/.test(type))) throw new Error("Elige una imagen JPG, PNG, WebP, AVIF o una foto de tu teléfono.");
+    if (/svg|xml|html/.test(type) || !(/\.(jpe?g|png|webp|avif|hei[cf]|gif|bmp)$/i.test(file.name) || /^image\/(jpeg|png|webp|avif|hei[cf](?:-sequence)?|gif|bmp)$/.test(type))) throw new Error("Elige una imagen JPG, PNG, WebP, AVIF o una foto HEIC de tu teléfono.");
     if (file.size > 35 * 1024 * 1024) throw new Error("La imagen original no puede superar 35 MB.");
-    const url = URL.createObjectURL(file);
+    let decoded;
     try {
-      const image = new Image(); image.src = url;
-      await image.decode().catch(() => { throw new Error("El navegador no pudo abrir esta imagen. Si es HEIC, elige o exporta una copia JPEG."); });
-      const scale = Math.min(1, 2400 / Math.max(image.naturalWidth, image.naturalHeight));
-      if (!image.naturalWidth || !image.naturalHeight) throw new Error("No se pudo leer la fotografía.");
-      const canvas = document.createElement("canvas"); canvas.width = Math.max(1, Math.round(image.naturalWidth * scale)); canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+      try { decoded = await nativeImage(file); }
+      catch {
+        if (!isHeic(file)) throw new Error("El navegador no pudo abrir esta imagen. Comprueba que el archivo no esté dañado.");
+        notify("Convirtiendo HEIC a JPEG en tu dispositivo…");
+        const decoder = await loadHeicDecoder(base);
+        try {
+          if (typeof createImageBitmap === "function") {
+            const bitmap = await decoder.heicTo({ blob: file, type: "bitmap" });
+            decoded = { source: bitmap, width: bitmap.width, height: bitmap.height, release: () => bitmap.close() };
+          } else {
+            const jpeg = await decoder.heicTo({ blob: file, type: "image/jpeg", quality: .98 });
+            decoded = await nativeImage(jpeg);
+          }
+        } catch { throw new Error("No se pudo convertir esta fotografía HEIC. Comprueba que el archivo no esté dañado e inténtalo otra vez."); }
+      }
+      const scale = Math.min(1, 2400 / Math.max(decoded.width, decoded.height));
+      if (!decoded.width || !decoded.height) throw new Error("No se pudo leer la fotografía.");
+      const canvas = document.createElement("canvas"); canvas.width = Math.max(1, Math.round(decoded.width * scale)); canvas.height = Math.max(1, Math.round(decoded.height * scale));
       const context = canvas.getContext("2d"); if (!context) throw new Error("No se pudo preparar la fotografía.");
-      context.fillStyle = "white"; context.fillRect(0, 0, canvas.width, canvas.height); context.drawImage(image, 0, 0, canvas.width, canvas.height);
+      context.fillStyle = "white"; context.fillRect(0, 0, canvas.width, canvas.height); context.drawImage(decoded.source, 0, 0, canvas.width, canvas.height);
       const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/jpeg", .9));
       canvas.width = 0; canvas.height = 0;
       if (!blob || blob.size > 8 * 1024 * 1024) throw new Error("No se pudo reducir la fotografía a menos de 8 MB.");
       return new File([blob], "fotografia.jpg", { type: "image/jpeg" });
-    } finally { URL.revokeObjectURL(url); }
+    } finally { decoded?.release(); }
   }
   function mount(root) {
     if (root.dataset.mcReady) return;
@@ -71,17 +103,29 @@
     root.innerHTML = '<details class="mc-upload"><summary>Añadir una fotografía</summary><form class="mc-form">' +
       '<p class="mc-explanation">La foto y su nota se añadirán a esta ficha después de la revisión.</p>' +
       '<div class="mc-pickers"><button type="button" data-picker="camera">Tomar foto</button><button type="button" data-picker="library">Galería</button><button type="button" data-picker="file">Archivo de imagen</button></div>' +
+      '<p class="mc-explanation">Las fotos HEIC/HEIF de iPhone se convierten automáticamente a JPEG antes de enviarlas.</p>' +
       '<input class="mc-file" type="file" data-input="camera" accept="image/*" capture="environment" aria-label="Tomar una fotografía">' +
       '<input class="mc-file" type="file" data-input="library" accept="image/*" aria-label="Elegir fotografía de la galería">' +
       '<input class="mc-file" type="file" data-input="file" accept=".jpg,.jpeg,.png,.webp,.avif,.heic,.heif,.gif,.bmp" aria-label="Elegir un archivo de imagen">' +
       '<div class="mc-preview" hidden><img alt="Vista previa de tu fotografía"><p class="mc-filename"></p><button type="button" class="mc-remove">Quitar foto</button></div>' +
+      '<label class="mc-permission"><input name="unabCollection" type="checkbox"><span>Usar descripción de la Colección UNAB, Concepción</span></label>' +
       '<label class="mc-field"><span>Nota / descripción de la fotografía</span><textarea name="description" rows="4" maxlength="1800" placeholder="Localidad, tamaño del ejemplar, rasgos que se aprecian…"></textarea><small>Aparecerá en la columna «nota», junto a la imagen.</small></label>' +
       '<label class="mc-field"><span>Autor de la fotografía <small>(opcional)</small></span><input name="author" type="text" maxlength="120" autocomplete="name"></label>' +
       '<label class="mc-permission"><input name="permission" type="checkbox" required><span>Tengo permiso para publicar esta fotografía y su descripción.</span></label>' +
       '<div class="mc-trap" aria-hidden="true"><label>Deja este campo vacío<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>' +
       '<button class="mc-submit" type="submit" disabled>Enviar para revisión</button><p class="mc-status" role="status" aria-live="polite"></p></form></details>';
     const form = root.querySelector("form"), submit = root.querySelector(".mc-submit"), status = root.querySelector(".mc-status"), preview = root.querySelector(".mc-preview");
-    let prepared = null, previewUrl = null, requestId = crypto.randomUUID(), busy = false, selection = 0;
+    let prepared = null, previewUrl = null, requestId = crypto.randomUUID(), busy = false, preparing = false, selection = 0;
+    const collection = form.elements.unabCollection, description = form.elements.description;
+    const collectionDescription = (root.dataset.mineralName || mineral.split("/").pop().replace(/\.md$/i, "")) + ", (+) Colección UNAB, Concepción";
+    let customDescription = "";
+    collection.addEventListener("change", () => {
+      if (collection.checked) { customDescription = description.value; description.value = collectionDescription; }
+      else description.value = customDescription;
+      description.readOnly = collection.checked;
+      requestId = crypto.randomUUID();
+    });
+    form.addEventListener("reset", () => { customDescription = ""; description.readOnly = false; });
     if (root.dataset.uploadOnly === "true") root.querySelector("details").open = true;
     function message(text, error) { status.textContent = text; status.classList.toggle("mc-error", !!error); }
     function remove() { selection++; prepared = null; if (previewUrl) URL.revokeObjectURL(previewUrl); previewUrl = null; preview.hidden = true; preview.querySelector("img").removeAttribute("src"); submit.disabled = true; root.querySelectorAll('input[type="file"]').forEach(input => { input.value = ""; }); }
@@ -89,14 +133,16 @@
     root.querySelector(".mc-remove").addEventListener("click", () => { if (!busy) { remove(); message(""); } });
     form.querySelectorAll('textarea, input[name="author"]').forEach(input => input.addEventListener("input", () => { if (!busy) requestId = crypto.randomUUID(); }));
     root.querySelectorAll('input[type="file"]').forEach(input => input.addEventListener("change", async () => {
-      const file = input.files[0]; if (!file || busy) return;
+      const file = input.files[0]; if (!file || busy || preparing) return;
       remove(); const current = selection; message("Preparando imagen…");
+      preparing = true; root.querySelectorAll('[data-picker], input[type="file"]').forEach(control => { control.disabled = true; });
       try {
-        const image = await prepareImage(file); if (current !== selection) return;
+        const image = await prepareImage(file, base, text => { if (current === selection) message(text); }); if (current !== selection) return;
         prepared = image; requestId = crypto.randomUUID(); previewUrl = URL.createObjectURL(image); preview.querySelector("img").src = previewUrl;
         preview.querySelector(".mc-filename").textContent = file.name + " · " + Math.max(1, Math.round(image.size / 1024)) + " KB";
-        preview.hidden = false; submit.disabled = false; message("Imagen preparada. Puedes añadir una nota antes de enviarla.");
+        preview.hidden = false; submit.disabled = false; message(isHeic(file) ? "HEIC convertido a JPEG. Puedes añadir una nota antes de enviarlo." : "Imagen preparada. Puedes añadir una nota antes de enviarla.");
       } catch (error) { if (current === selection) message(error.message, true); }
+      finally { preparing = false; root.querySelectorAll('[data-picker], input[type="file"]').forEach(control => { control.disabled = false; }); }
     }));
     form.addEventListener("submit", async event => {
       event.preventDefault(); if (busy || !prepared || !form.reportValidity()) return;
@@ -122,7 +168,7 @@
     }
   }
   function init(scope = document) { scope.querySelectorAll(".mineral-contributions").forEach(mount); }
-  window.MineralContributions = { init, imageTable };
+  window.MineralContributions = { init, imageTable, prepareImage };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => init()); else init();
   if (typeof document$ !== "undefined") document$.subscribe(() => init());
 })();
