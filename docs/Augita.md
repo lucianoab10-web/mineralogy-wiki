@@ -4,6 +4,8 @@ tags:
   - metamorficos-lista
   - resuelto
   - md
+  - inosilicato
+  - cadena-simple
 ---
 
 | Tipo                                                         | Formula                               | Mejores marcas de campo                                                     | Especies similares                                                                                                | Ambiente                                                                                                                                                                                                                                                                                                                                                                                                   |

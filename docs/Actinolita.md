@@ -3,6 +3,8 @@ tags:
   - minerales
   - resuelto
   - metamorficos-lista
+  - inosilicato
+  - cadena-doble
 ---
 
 | Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente |

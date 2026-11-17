@@ -1,6 +1,7 @@
 ---
 tags:
   - minerales
+  - nesosilicato
 ---
 Una serie compuesta por dos miembros extremos, forsterita y fayalita, que se presentan como especies separadas; cuando se combinan químicamente forman el silicato de magnesio y hierro comúnmente denominado olivino.
 

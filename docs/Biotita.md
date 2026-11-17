@@ -1,5 +1,7 @@
 ---
 tags:
+  - minerales
+  - filosilicato
 ---
 Silicato básico de potasio, magnesio, hierro y aluminio; grupo de las micas
 

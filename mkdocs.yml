@@ -19,7 +19,7 @@ extra_javascript:
   - assets/mineral-wiki/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/mineral-wiki/mobile-tables.js
-  - assets/mineral-wiki/contributions.js
+  - assets/mineral-wiki/contributions.js?v=heic-1.6.7-unab-20261117
 
 extra_css:
   - assets/mineral-wiki/mobile-tables.css
@@ -31,8 +31,12 @@ hooks:
   - hooks/mineral_math.py
   - hooks/site_assets.py
   - hooks/mineral_contributions.py
+  - hooks/mineral_abbreviations.py
 
 extra:
+  mineral_abbreviations:
+    source: 'abreviaturas minerales (EN).md'
+    aliases: references/mineral-name-aliases.json
   photo_contributions:
     api_url: https://mineralogy-photo-submissions.knobbyion6.chatgpt.site
     review_url: https://mineralogy-photo-review.knobbyion6.chatgpt.site
@@ -53,6 +57,7 @@ extra:
       - Talco.md
       - Tremolita.md
     references:
+      - abreviaturas minerales (EN).md
       - fdg-tabla-minerales-completa.md
       - fdg-tabla-minerales.md
       - Fichas_Minerales_Parte2_Detallado.md
@@ -76,4 +81,5 @@ extra:
       - Titanita.md
     templates:
       - baseminerales.md
+
 

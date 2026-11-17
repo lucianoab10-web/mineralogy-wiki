@@ -3,6 +3,7 @@ tags:
   - minerales
   - resuelto
   - metamorficos-lista
+  - "#filosilicato"
 ---
 
 | Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente | Observaciones | Depósitos | Asociación |

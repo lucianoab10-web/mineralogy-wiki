@@ -3,6 +3,7 @@ tags:
   - metamorficos-lista
   - minerales
   - resuelto
+  - nesosilicato
 ---
 
 | Tipo | Mejores marcas de campo | Formula | Especies similares | Ambiente |
