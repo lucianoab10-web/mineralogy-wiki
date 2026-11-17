@@ -1,0 +1,37 @@
+name: Check mineral photo integration
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Check JavaScript syntax
+        run: |
+          node --check site-assets/contributions.js
+          node --check site-assets/mobile-tables.js
+      - name: Install MkDocs
+        run: python -m pip install mkdocs-material mkdocs-roamlinks-plugin
+      - name: Build all wiki pages
+        run: python -m mkdocs build
+      - name: Validate generated mineral catalogue
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          catalogue = json.loads(Path('site/assets/mineral-wiki/contribution-catalog.json').read_text())
+          minerals = catalogue['minerals']
+          ids = [item['id'] for item in minerals]
+          assert len(ids) == len(set(ids)), 'Duplicate mineral identifiers'
+          assert {'Magnetita.md', 'Cuarzo.md', 'Apatito.md'} <= set(ids)
+          assert 'baseminerales.md' not in ids
+          assert 'tabla_identificacion_55_minerales.md' not in ids
+          print(f'Validated {len(minerals)} mineral sheets')
+          PY
