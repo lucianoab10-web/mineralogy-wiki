@@ -1,0 +1,4 @@
+---
+tags:
+---
+Un diatrema, también conocido en ocasiones como volcán maar-diatrema, es un conducto volcánico asociado a una explosión gaseosa. Cuando el magma asciende a través de una fisura en la corteza terrestre y entra en contacto con una masa de agua subterránea poco profunda, la rápida expansión del vapor de agua calentado y de los gases volcánicos puede provocar una serie de explosiones. Queda un cráter relativamente poco profundo (conocido como «maar») y una fractura rellena de roca (el diatrema propiamente dicho) en la corteza. Cuando los diatremas atraviesan la superficie, forman un cono invertido de laderas empinadas.

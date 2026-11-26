@@ -1,0 +1,9 @@
+---
+tags:
+---
+*   **Distancia de transporte del fluido:** Ocurren a distancias cortas desde su fuente magmática hasta la trampa de mena, por lo que los fluidos hidrotermales sufren poca variación composicional en su trayecto.
+* **Alteraciones asociadas:** Se destaca la albitización (asociada a alteración propilítica de alta temperatura) como una alteración temprana y profunda durante etapas tardías de cristalización magmática. En zonas colindantes al pórfido se desarrollan clinopiroxeno ($>300^\circ\text{C}$) y granate ($>325^\circ\text{–}350^\circ\text{C}$).
+* **Concentración mínima de metales:** Requieren un mínimo aproximado de 10 ppm de metales base en el fluido para un transporte y depositación efectivos.
+"Generalidades Los depósitos del tipo pórfido cuprífero comprenden yacimientos de gran volumen de mineralización primaria de sulfuros de cobre-fierro y fierro, en general hospedados y directamente asociados a cuerpos intrusivos porfídicos, pero en ningún caso estrictamente restringidos a roca intrusiva. Estos yacimientos están asociados a arcos magmáticos de margenes continentales y a magmatismo calcoalcalino de composición intermedia. La roca huésped es típicamente granodiorita, cuarzo-monzonita y pórfido andesítico, asociado a sistemas intrusivos multifaséticos y comúnmente relacionado con etapas tardías de la evolución magmática. La mineralización ocurre en forma diseminada, en vetillas y enjambres de vetillas (stockwork), en columnas de brecha y también como rellenos. Los cuerpos de pórfido cuprífero tienden a ser grandes (cientos a miles de metros de diámetro), de forma concéntrica a elongada, con contornos regulares a irregulares en planta. En secciones verticales estos yacimientos tienen forma tubular o de embudo (muela), con ejes casi verticales. Normalmente se observa mayor diseminación horizontal que vertical, hasta 6 Km" (Townley, p. 51)
+
+![Pasted image 20261121162530.png](imagenes/Pasted%20image%2020261121162530.png)
