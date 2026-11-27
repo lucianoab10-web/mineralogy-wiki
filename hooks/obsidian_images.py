@@ -22,7 +22,7 @@ Instalación (mkdocs.yml)
 
     extra:
       image_dirs:        # opcional: dónde buscar, además de docs_dir y de la carpeta del proyecto
-        - C:/Users/Luciano/iCloudDrive/iCloud~md~obsidian/my-notes
+        - C:/Users/Luciano/Obsidian/my-notes
 
 También se puede usar la variable de entorno MKDOCS_IMAGE_DIRS (rutas separadas por «;»).
 Requiere MkDocs 1.5 o superior (Material 9.5+ ya lo exige).

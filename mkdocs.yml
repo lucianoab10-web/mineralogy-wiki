@@ -41,7 +41,7 @@ extra:
     api_url: https://mineralogy-photo-submissions.knobbyion6.chatgpt.site
     review_url: https://mineralogy-photo-review.knobbyion6.chatgpt.site
   image_dirs:
-    - 'C:/Users/Luciano/iCloudDrive/iCloud~md~obsidian/my-notes/compartidos/second-brain/imagenes'
+    - 'C:/Users/Luciano/Obsidian/my-notes/compartidos/second-brain/imagenes'
   # La navegación cambia solo en la web; las notas y sus URL conservan su ruta.
   # Las fichas nuevas se detectan por tags: [minerales] o su tabla de propiedades.
   mineral_navigation:
@@ -66,6 +66,7 @@ extra:
       - Fichas_Minerales_Parte3_Restantes.md
       - Guia_Identificacion_Minerales_por_Propiedades.md
       - tabla_identificacion_55_minerales.md
+      - Archivos en Drive.md
     # Estas notas ya existen en el vault, pero todavía están vacías.
     pending:
       - Anfíboles Amp.md
